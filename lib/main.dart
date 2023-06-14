@@ -41,7 +41,7 @@ class _SampleChatGPTState extends State<SampleChatGPT> {
     final response = await post(
       Uri.parse('https://api.openai.com/v1/chat/completions'),
       headers: {
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer $key',
         'Content-Type': 'application/json',
         // 'OpenAI-Organization': 'org-3kJ8f2NS5osyB5W4JgEzVpha',
       },
